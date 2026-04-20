@@ -4,7 +4,7 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig(() => ({
+export default defineConfig({
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
@@ -15,4 +15,4 @@ export default defineConfig(() => ({
     port: 3000,
     host: true,
   },
-}));
+});
