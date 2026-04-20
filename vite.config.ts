@@ -4,15 +4,18 @@ import { tanstackStart } from "@tanstack/react-start/plugin/vite";
 import tsConfigPaths from "vite-tsconfig-paths";
 import tailwindcss from "@tailwindcss/vite";
 
-export default defineConfig({
+export default defineConfig(() => ({
   plugins: [
     tsConfigPaths(),
     tailwindcss(),
     tanstackStart(),
     viteReact(),
   ],
+  build: {
+    outDir: "dist",
+  },
   server: {
     port: 3000,
     host: true,
   },
-});
+}));
