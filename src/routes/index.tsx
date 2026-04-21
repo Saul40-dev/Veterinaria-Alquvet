@@ -21,22 +21,6 @@ import { whatsappUrl, SITE } from "@/lib/site";
 import { SectionHeading } from "@/components/site/SectionHeading";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Clínica Veterinaria ALQUVET Carabayllo · Medicina con corazón" },
-      {
-        name: "description",
-        content:
-          "Veterinaria en Carabayllo: consulta, cirugía, banco de sangre, peluquería y tienda. Atención cálida y profesional para tu mascota. Agenda por WhatsApp.",
-      },
-      { property: "og:title", content: "Clínica Veterinaria ALQUVET · Carabayllo" },
-      {
-        property: "og:description",
-        content:
-          "Medicina veterinaria especializada con atención cálida en Carabayllo, Lima. Agenda tu cita por WhatsApp.",
-      },
-    ],
-  }),
   component: HomePage,
 });
 

@@ -3,22 +3,6 @@ import { Star, Quote } from "lucide-react";
 import { SectionHeading } from "@/components/site/SectionHeading";
 
 export const Route = createFileRoute("/testimonios")({
-  head: () => ({
-    meta: [
-      { title: "Testimonios · Clínica Veterinaria ALQUVET Carabayllo" },
-      {
-        name: "description",
-        content:
-          "Lee las experiencias de familias que confían en ALQUVET para el cuidado de sus mascotas en Carabayllo.",
-      },
-      { property: "og:title", content: "Testimonios reales · ALQUVET" },
-      {
-        property: "og:description",
-        content:
-          "Más de 30 familias nos han calificado con 4.8 estrellas. Conoce sus historias.",
-      },
-    ],
-  }),
   component: TestimonialsPage,
 });
 

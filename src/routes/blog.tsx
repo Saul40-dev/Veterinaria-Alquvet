@@ -9,22 +9,6 @@ import blogGato from "@/assets/blog-gato.jpg";
 import blogBancoSangre from "@/assets/blog-banco-sangre.jpg";
 
 export const Route = createFileRoute("/blog")({
-  head: () => ({
-    meta: [
-      { title: "Blog veterinario · Consejos de cuidado para mascotas · ALQUVET" },
-      {
-        name: "description",
-        content:
-          "Consejos veterinarios sobre nutrición, salud, vacunación y bienestar para perros y gatos. Blog de la Clínica Veterinaria ALQUVET en Carabayllo.",
-      },
-      { property: "og:title", content: "Blog ALQUVET · Cuidado de mascotas" },
-      {
-        property: "og:description",
-        content:
-          "Artículos prácticos para que tu mascota viva una vida sana, larga y feliz.",
-      },
-    ],
-  }),
   component: BlogPage,
 });
 

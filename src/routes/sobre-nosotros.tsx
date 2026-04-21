@@ -4,22 +4,6 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import petsImg from "@/assets/about-pets.jpg";
 
 export const Route = createFileRoute("/sobre-nosotros")({
-  head: () => ({
-    meta: [
-      { title: "Sobre nosotros · Clínica Veterinaria ALQUVET Carabayllo" },
-      {
-        name: "description",
-        content:
-          "Conoce a ALQUVET, la clínica veterinaria de Carabayllo con medicina especializada, cirugía avanzada y atención cálida para perros y gatos.",
-      },
-      { property: "og:title", content: "Sobre ALQUVET · Veterinaria en Carabayllo" },
-      {
-        property: "og:description",
-        content:
-          "Equipo profesional, atención personalizada y tecnología médica al servicio de tu mascota.",
-      },
-    ],
-  }),
   component: AboutPage,
 });
 

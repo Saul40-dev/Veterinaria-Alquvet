@@ -12,22 +12,6 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { whatsappUrl } from "@/lib/site";
 
 export const Route = createFileRoute("/servicios")({
-  head: () => ({
-    meta: [
-      { title: "Servicios veterinarios en Carabayllo · ALQUVET" },
-      {
-        name: "description",
-        content:
-          "Consulta, cirugía, banco de sangre, peluquería canina, profilaxis dental y tienda veterinaria en Carabayllo. Atención profesional y precios accesibles.",
-      },
-      { property: "og:title", content: "Servicios veterinarios · ALQUVET Carabayllo" },
-      {
-        property: "og:description",
-        content:
-          "Medicina general, interna, cirugía, estética y tienda veterinaria. Todo lo que tu mascota necesita en un solo lugar.",
-      },
-    ],
-  }),
   component: ServicesPage,
 });
 

@@ -6,22 +6,6 @@ import { SectionHeading } from "@/components/site/SectionHeading";
 import { SITE, whatsappUrl } from "@/lib/site";
 
 export const Route = createFileRoute("/contacto")({
-  head: () => ({
-    meta: [
-      { title: "Contacto · Clínica Veterinaria ALQUVET Carabayllo" },
-      {
-        name: "description",
-        content:
-          "Visítanos en Av. Mariano Condorcanqui, Carabayllo. Llámanos al (01) 681 2395 o escríbenos por WhatsApp al +51 918 819 129.",
-      },
-      { property: "og:title", content: "Contacto · ALQUVET Carabayllo" },
-      {
-        property: "og:description",
-        content:
-          "Estamos cerca de ti. Encuentra dirección, teléfono, horarios y mapa de la veterinaria.",
-      },
-    ],
-  }),
   component: ContactPage,
 });
 
